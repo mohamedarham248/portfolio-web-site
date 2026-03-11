@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.B. Mohamed Arham | Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background: #020617;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 600;
+            color: #38bdf8;
+        }
+
+        nav a {
+            margin-left: 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .hero-text h1 {
+            font-size: 42px;
+        }
+
+        .hero-text h3 {
+            color: #38bdf8;
+            margin-top: 10px;
+        }
+
+        .hero-text p {
+            margin-top: 10px;
+            color: #94a3b8;
+        }
+
+        /* Unga photo-vukku glow effect matrum correct-ana shape */
+        .hero img {
+            width: 250px;
+            height: 250px;
+            border-radius: 20px;
+            object-fit: cover; /* Photo nungama irukka */
+            box-shadow: 0 0 25px #38bdf8;
+            border: 2px solid #38bdf8;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #020617;
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .project {
+            background: #020617;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .project a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+        }
+
+        .contact input,
+        .contact textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #1e293b;
+            color: white;
+        }
+
+        button {
+            padding: 10px;
+            background: #38bdf8;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #020617;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+            margin-top: 40px;
+            color: #94a3b8;
+        }
+
+        @media(max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero img {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Arham</div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>M.B. Mohamed Arham</h1>
+        <h3>Developer • Apps Creator • Coding Creator</h3>
+        <p>Creative developer building modern websites, apps and coding solutions.</p>
+    </div>
+
+    <img src="arham.jpg" alt="M.B. Mohamed Arham">
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am Mohamed Arham, a passionate developer who loves building modern websites and applications.
+        My goal is to help startups, businesses and individuals bring their ideas to life using clean code
+        and modern technologies.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="card">
+            <h3>Frontend</h3>
+            <p>HTML</p><p>CSS</p><p>JavaScript</p><p>React</p>
+        </div>
+        <div class="card">
+            <h3>Backend</h3>
+            <p>Python</p><p>Node.js</p><p>API Development</p>
+        </div>
+        <div class="card">
+            <h3>Design</h3>
+            <p>UI Design</p><p>Responsive Design</p><p>Mobile Friendly</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>A modern developer portfolio website.</p>
+            <p><b>Tech Stack:</b> HTML, CSS, JavaScript</p>
+            <p><a href="#">GitHub</a> | <a href="#">Live Demo</a></p>
+        </div>
+        <div class="project">
+            <h3>Task Manager App</h3>
+            <p>A productivity app to manage daily tasks easily.</p>
+            <p><b>Tech Stack:</b> React, Node.js</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: Mohamedarham248@gmail.com</p>
+    <p>WhatsApp: 0776881924</p>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 M.B. Mohamed Arham | Developer Portfolio</p>
+</footer>
+
+</body>
+</html>
